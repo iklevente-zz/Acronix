@@ -20,18 +20,37 @@ namespace Acronix
             InitializeComponent();
         }
 
-        ChromiumWebBrowser chromium;
+        private ChromiumWebBrowser chromium;
 
         private void Acronix_Load(object sender, EventArgs e)
         {
-            //Initialize cefsettings / A cefsettings inicializálása
-            CefSettings settings = new CefSettings();
-            Cef.Initialize(settings);
-            urlBar.Text = "https://www.google.com/";
-            chromium = new ChromiumWebBrowser(urlBar.Text);
-            this.webRenderer.Controls.Add(chromium);
-            chromium.Dock = DockStyle.Fill;
+            //Starting CefSettings from Settings.cs / A CefSettings indítása a Settings.cs classból
+            Settings.InitCefSettings();
+
+            //Creating the first tab / Az első tab létrehozása
+            CreateTab();
+        }
+
+        private void newTabButton_Click(object sender, EventArgs e)
+        {
+            CreateTab();
+        }
+
+        private void CreateTab()
+        {
+            TabPage tab = new TabPage();
+            tab.Text = "New Tab";
+            tabControl.Controls.Add(tab);
+            tabControl.SelectTab(tabControl.TabCount - 1);
+            chromium = new ChromiumWebBrowser(Settings.homepage)
+            {
+                Parent = tab,
+                Dock = DockStyle.Fill
+            };
+            urlBar.Text = Settings.homepage;
+
             chromium.AddressChanged += OnBrowserAddressChanged;
+            chromium.TitleChanged += OnBrowserTitleChanged;
         }
 
         private void OnBrowserAddressChanged(object sender, AddressChangedEventArgs args)
@@ -41,39 +60,56 @@ namespace Acronix
 
         private void OnBrowserTitleChanged(object sender, TitleChangedEventArgs args)
         {
-            this.InvokeOnUiThreadIfRequired(() => Text = args.Title);
+            this.InvokeOnUiThreadIfRequired(() => tabControl.SelectedTab.Text = args.Title);
 
         }
 
         private void urlBar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            //Go to the typed link if enter was pressed / Enter lenyomására menj az adott linkre
+            chromium = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+            if (chromium != null)
             {
-                chromium.Load(urlBar.Text);
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    chromium.Load(urlBar.Text);
 
-                //Fix for windows ding sound when pressing enter / Windows hang némítása enter nyomás közben
-                e.Handled = true;
+                    //Fix for windows ding sound when pressing enter / Windows hang némítása enter nyomás közben
+                    e.Handled = true;
+                }
             }
         }
 
         private void reloadButton_Click(object sender, EventArgs e)
         {
-            chromium.Reload();
+            chromium = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+            if (chromium != null)
+            {
+                chromium.Reload();
+            }
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            if(chromium.CanGoBack)
+            chromium = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+            if (chromium != null)
             {
-                chromium.Back();
+                if (chromium.CanGoBack)
+                {
+                    chromium.Back();
+                }
             }
         }
 
         private void forwardButton_Click(object sender, EventArgs e)
         {
-            if(chromium.CanGoForward)
+            chromium = tabControl.SelectedTab.Controls[0] as ChromiumWebBrowser;
+            if (chromium != null)
             {
+                if(chromium.CanGoForward)
+                {
                 chromium.Forward();
+                }
             }
         }
 
