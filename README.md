@@ -14,4 +14,7 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 - Download system
 - Fullscreen mode
 
+### Are you a C#/.Net Developer and want to contribute?
+Please use the latest Visual Studio with the deafult .NET desktop development installation and download CefSharp.WinForms NuGet package with the required additional packages.
+
 *This project is licensed under the MIT license.*
