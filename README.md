@@ -4,13 +4,15 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 
 ### Currently supports:
 - Basic web browsing
-- Working url bar
+- Working URL bar
 - Cookie saving
 
 ### Plans:
 - Make a full featured web browser
 - Tabs (25%)
 - A good UI for settings
+- History saving
+- Save sites to Favourites
 - Download system
 - Fullscreen mode
 
