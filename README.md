@@ -15,6 +15,6 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 - Fullscreen mode
 
 ### Are you a C#/.Net Developer and want to contribute?
-Please use the latest Visual Studio with the deafult .NET desktop development installation and download CefSharp.WinForms NuGet package with the required additional packages.
+Open the Acronix.csproj file. If Visual Studio asks you to save the project (generate the .sln file) please save it as Acronix.sln next to the Acronix-master folder and restore the missing NuGet packages.
 
 *This project is licensed under the MIT license.*
