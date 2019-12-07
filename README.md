@@ -5,11 +5,11 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 ### Currently supports:
 - Basic web browsing
 - Working url bar
+- Cookie saving
 
 ### Plans:
 - Make a full featured web browser
-- Cookie saving
-- Tabs
+- Tabs (25%)
 - A good UI for settings
 - Download system
 - Fullscreen mode
