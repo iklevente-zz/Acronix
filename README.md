@@ -7,6 +7,7 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 - Working URL bar (35%)
 - Cookie saving (100%)
 - Tabs (25%)
+- Right click functions (10%)
 
 ### Plans:
 - Make a full featured web browser (1%)
@@ -15,8 +16,12 @@ This web browser is currently under development by Ilyó Kovács Levente for lea
 - Save sites to Favourites (0%)
 - Download system (0%)
 - Fullscreen mode (0%)
+- Incognito mode (0%)
+- New window (0%)
+- Zooming (0%)
+- Printing (0%)
 
 ### Are you a C#/.Net Developer and want to contribute?
-Download the project and open the Acronix.csproj file. If Visual Studio asks you to save the project (generate the .sln file) please save it as Acronix.sln next to the Acronix-master folder and restore the missing NuGet packages. Thank you for contributing! 💚👽
+Download the project and open the Acronix.csproj file. If Visual Studio asks you to save the project (generate the .sln file) please save it as Acronix.sln next to the Acronix-master folder and then restore the missing NuGet packages. Thank you for contributing! 💚👽
 
 *This project is licensed under the MIT license.*
