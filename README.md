@@ -2,7 +2,7 @@
 
 This web browser was under development by Ilyó Kovács Levente for learning purposes. The browser uses [CefSharp](http://https://github.com/cefsharp/CefSharp/ "CefSharp") to embed the Chromium Framework into the browser and it uses .NET Framework/WinForms UI.
 
-**This version of the browser is deprecated and will no longer be updated. Use the newer WPF version [here](https://github.com/iklevente/Acronix "here").**
+**This browser is deprecated and will no longer be updated. Use the new, maintained WPF browser [here](https://github.com/iklevente/Sharpy "here").**
 
 *You can still fork this project and use it as you want.*
 
