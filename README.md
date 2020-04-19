@@ -6,14 +6,14 @@ This web browser was under development by Ilyó Kovács Levente for learning pur
 
 *You can still fork this project and use it as you want.*
 
-### Currently supports:
+## Currently supports:
 - Basic web browsing (100%)
 - Working URL bar (35%)
 - Cookie saving (100%)
 - Tabs (25%)
 - Right click functions (10%)
 
-### Plans:
+## Plans:
 - Make a full featured web browser (1%)
 - A good UI for settings (0%)
 - History saving (0%)
@@ -25,7 +25,10 @@ This web browser was under development by Ilyó Kovács Levente for learning pur
 - Zooming (0%)
 - Printing (0%)
 
-### Are you a C#/.Net Developer and want to contribute?
-Download the project and open the Acronix.csproj file. If Visual Studio asks you to save the project (generate the .sln file) please save it as Acronix.sln next to the Acronix-master folder and then restore the missing NuGet packages. Thank you for contributing! 💚👽
+
+## Buy me a coffee ☕:
+**[PayPal](paypal.me/iklevi)**
+
+**Monero address** `44zh2iQsZcc8knbgwDPhRzKHmX6fgAq8kHz84qoCYv4v6qaRjVWcUmhFfjc8dhkYQw9whdecg3wtALe8ScJr5Ck4Hut4HNe`
 
 *This project is licensed under the MIT license.*
