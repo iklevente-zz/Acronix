@@ -28,6 +28,4 @@ This web browser was under development by Ilyó Kovács Levente for learning pur
  ## Buy me a coffee ☕:
 **[PayPal](https://www.paypal.me/iklevi)**
 
-**Monero address:** `44zh2iQsZcc8knbgwDPhRzKHmX6fgAq8kHz84qoCYv4v6qaRjVWcUmhFfjc8dhkYQw9whdecg3wtALe8ScJr5Ck4Hut4HNe`
-
 *This project is licensed under the MIT license. Made by Ilyó Kovács Levente.*
