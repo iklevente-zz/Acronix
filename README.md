@@ -1,6 +1,6 @@
 # Acronix
 
-**Note: The 3rd party CefSharp engine that I'm using in this project is outdated and has potential security vulnerabilities! Please update CefSharp if you want to work with this project!**
+**Note: The 3rd party CefSharp engine that I was using in this project might be outdated and has potential security vulnerabilities! Please update CefSharp if you want to work with this project!**
 
 This web browser was under development by Ilyó Kovács Levente for learning purposes. The browser uses [CefSharp](http://https://github.com/cefsharp/CefSharp/ "CefSharp") to embed the Chromium Framework into the browser and it uses .NET Framework/WinForms UI.
 
