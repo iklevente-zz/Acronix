@@ -25,7 +25,5 @@ This web browser was under development by Ilyó Kovács Levente for learning pur
 - Zooming (0%)
 - Printing (0%)
 
- ## Buy me a coffee ☕:
-**[PayPal](https://www.paypal.me/iklevi)**
 
 *This project is licensed under the MIT license. Made by Ilyó Kovács Levente.*
